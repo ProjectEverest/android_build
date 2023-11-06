@@ -262,7 +262,7 @@ class EdifyGenerator(object):
     """Log a message to the screen (if the logs are visible)."""
     self.script.append('ui_print("%s");' % (message,))
 
-  def PrintEverestBanner(android_version, build_id, build_date, security_patch, device):
+  def PrintEverestBanner(self, android_version, build_id, build_date, security_patch, device):
     self.Print("------------------------------------------------------")
     self.Print("  ________      ________ _____  ______  _____ _______ ")
     self.Print(" |  ____\ \    / /  ____|  __ \|  ____|/ ____|__   __|")
